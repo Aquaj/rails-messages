@@ -1,1 +1,7 @@
 <h1>Edit</h1>
+
+<%= form_for @message, url: {action: "create"}, html: {class: "edit_message"} do |f| %>
+  <%= f.label :message %>
+  <%= f.text_area :content %>
+  <%= f.submit "Create" %>
+<% e

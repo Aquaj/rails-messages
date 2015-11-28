@@ -1,1 +1,12 @@
 <h1>Index</h1>
+
+<% @messages.each do |message| %>
+
+	<div class="message">
+		<div class="content"><%= message.content %></div>
+
+		<div class="author"><%= message.author %></div>
+	</div>
+	<br>
+
+<%end%>
